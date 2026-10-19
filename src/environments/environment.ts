@@ -3,9 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  appName: 'securepay-site',
+  appName: 'stacksale-pay-site',
   production: false,
-  // securepayCredentials:{
+  // stacksalePayCredentials:{
   //   username: '',
   //   password: ''
   // },

@@ -1,35 +1,35 @@
 {
-  "name": "securepay-site",
+  "name": "stacksale-pay-site",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/securepay-site/src",
+  "sourceRoot": "apps/stacksale-pay-site/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/securepay-site/browser",
-        "index": "apps/securepay-site/src/index.html",
-        "main": "apps/securepay-site/src/main.ts",
-        "polyfills": ["apps/securepay-site/src/polyfills.ts"],
-        "tsConfig": "apps/securepay-site/tsconfig.app.json",
+        "outputPath": "dist/apps/stacksale-pay-site/browser",
+        "index": "apps/stacksale-pay-site/src/index.html",
+        "main": "apps/stacksale-pay-site/src/main.ts",
+        "polyfills": ["apps/stacksale-pay-site/src/polyfills.ts"],
+        "tsConfig": "apps/stacksale-pay-site/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "stylePreprocessorOptions": {
           "includePaths": ["libs", "node_modules"]
         },
         "assets": [
-          "apps/securepay-site/src/favicon.ico",
-          "apps/securepay-site/src/assets",
+          "apps/stacksale-pay-site/src/favicon.ico",
+          "apps/stacksale-pay-site/src/assets",
           {
             "glob": "**/*",
-            "input": "apps/securepay-site/public"
+            "input": "apps/stacksale-pay-site/public"
           }
         ],
         "styles": [
-          "apps/securepay-site/src/styles.scss",
-          "apps/securepay-site/src/assets/css/lib/securePayAdmin.css"
+          "apps/stacksale-pay-site/src/styles.scss",
+          "apps/stacksale-pay-site/src/assets/css/lib/stacksalePayAdmin.css"
         ],
         "scripts": [
           "node_modules/jquery/dist/jquery.js",
@@ -47,8 +47,8 @@
         ],
         "fileReplacements": [
           {
-            "replace": "apps/securepay-site/src/environments/environment.ts",
-            "with": "apps/securepay-site/src/environments/environment.prod.ts"
+            "replace": "apps/stacksale-pay-site/src/environments/environment.ts",
+            "with": "apps/stacksale-pay-site/src/environments/environment.prod.ts"
           }
         ],
         "optimization": {
@@ -78,8 +78,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/securepay-site/src/environments/environment.ts",
-              "with": "apps/securepay-site/src/environments/environment.prod.ts"
+              "replace": "apps/stacksale-pay-site/src/environments/environment.ts",
+              "with": "apps/stacksale-pay-site/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all",
@@ -100,8 +100,8 @@
           "namedChunks": true
         },
         "promo": {
-          "outputPath": "dist/apps/securepay-site/promo",
-          "main": "apps/securepay-site/src/main.promo.ts"
+          "outputPath": "dist/apps/stacksale-pay-site/promo",
+          "main": "apps/stacksale-pay-site/src/main.promo.ts"
         }
       },
       "defaultConfiguration": "production"
@@ -110,13 +110,13 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "securepay-site:build:production"
+          "buildTarget": "stacksale-pay-site:build:production"
         },
         "development": {
-          "buildTarget": "securepay-site:build:development"
+          "buildTarget": "stacksale-pay-site:build:development"
         },
         "promo": {
-          "buildTarget": "securepay-site:build:promo"
+          "buildTarget": "stacksale-pay-site:build:promo"
         }
       },
       "defaultConfiguration": "development",
@@ -125,7 +125,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "securepay-site:build"
+        "buildTarget": "stacksale-pay-site:build"
       }
     },
     "lint": {
@@ -135,13 +135,13 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/securepay-site/jest.config.ts"
+        "jestConfig": "apps/stacksale-pay-site/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "securepay-site:build",
+        "buildTarget": "stacksale-pay-site:build",
         "spa": true
       }
     },
@@ -149,9 +149,9 @@
       "dependsOn": ["build"],
       "executor": "@angular-devkit/build-angular:server",
       "options": {
-        "outputPath": "dist/apps/securepay-site/server",
-        "main": "apps/securepay-site/src/server.ts",
-        "tsConfig": "apps/securepay-site/tsconfig.server.json",
+        "outputPath": "dist/apps/stacksale-pay-site/server",
+        "main": "apps/stacksale-pay-site/src/server.ts",
+        "tsConfig": "apps/stacksale-pay-site/tsconfig.server.json",
         "inlineStyleLanguage": "scss"
       },
       "configurations": {
@@ -173,12 +173,12 @@
       "executor": "@angular-devkit/build-angular:ssr-dev-server",
       "configurations": {
         "development": {
-          "browserTarget": "securepay-site:build:development",
-          "serverTarget": "securepay-site:server:development"
+          "browserTarget": "stacksale-pay-site:build:development",
+          "serverTarget": "stacksale-pay-site:server:development"
         },
         "production": {
-          "browserTarget": "securepay-site:build:production",
-          "serverTarget": "securepay-site:server:production"
+          "browserTarget": "stacksale-pay-site:build:production",
+          "serverTarget": "stacksale-pay-site:server:production"
         }
       },
       "defaultConfiguration": "development",
@@ -191,12 +191,12 @@
       },
       "configurations": {
         "development": {
-          "browserTarget": "securepay-site:build:development",
-          "serverTarget": "securepay-site:server:development"
+          "browserTarget": "stacksale-pay-site:build:development",
+          "serverTarget": "stacksale-pay-site:server:development"
         },
         "production": {
-          "browserTarget": "securepay-site:build:production",
-          "serverTarget": "securepay-site:server:production"
+          "browserTarget": "stacksale-pay-site:build:production",
+          "serverTarget": "stacksale-pay-site:server:production"
         }
       },
       "defaultConfiguration": "production"
@@ -206,7 +206,7 @@
       "options": {
         "commands": [
           {
-            "command": "node scripts/pack.js --input \"./dist/apps/securepay-site/promo\" --name \"{{name}}-promo-{{version}}\" "
+            "command": "node scripts/pack.js --input \"./dist/apps/stacksale-pay-site/promo\" --name \"{{name}}-promo-{{version}}\" "
           }
         ]
       }
@@ -215,9 +215,9 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "nx run securepay-site:build:production",
-          "nx run securepay-site:server:production",
-          "nx run securepay-site:build:promo"
+          "nx run stacksale-pay-site:build:production",
+          "nx run stacksale-pay-site:server:production",
+          "nx run stacksale-pay-site:build:promo"
         ]
       },
       "parallel": false

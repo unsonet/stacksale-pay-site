@@ -1,7 +1,7 @@
 export const environment = {
-  appName: 'securepay-site',
+  appName: 'stacksale-pay-site',
   production: true,
-  // securepayCredentials:{
+  // stacksalePayCredentials:{
   //   username: '',
   //   password: ''
   // },

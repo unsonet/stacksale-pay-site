@@ -1,7 +1,7 @@
 import { Component, ElementRef, HostBinding, Inject, Input, NgZone, OnInit, SecurityContext, SimpleChanges, ViewChild, } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { DayOfWeek } from '@unsonet/securepay-types';
-import { ContentType, DisplayMethod, QuestionTypes, SelectionType, TaxType } from '@unsonet/securepay-types/promotions';
+import { DayOfWeek } from '@unsonet/stacksale-pay-types';
+import { ContentType, DisplayMethod, QuestionTypes, SelectionType, TaxType } from '@unsonet/stacksale-pay-types/promotions';
 import { AirDatepickerDirective } from '@unsonet/ngx-air-datepicker-directive';
 import { BootstrapSelectDirective } from '@unsonet/ngx-bootstrap-select-directive';
 import { EmailValidators, PhoneValidators } from '@unsonet/ngx-validators';

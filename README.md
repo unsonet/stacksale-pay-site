@@ -1,4 +1,4 @@
-# SecurePay Site
+# Stacksale Pay Site
 # New Promotion Page
 The **New Promotion Page** (`/admin/promotions/new_promotion`) is an Angular-based form for creating and editing promotions. It integrates with the backend via configurable API endpoints and supports several query parameters to control its behaviour.
 
@@ -24,10 +24,10 @@ Example:
 
 ## Custom API Endpoints
 
-By default, the component uses endpoints defined in the global variable `SecurePayApiEndpoints`. You can override these endpoints **before** the component initialises by setting:
+By default, the component uses endpoints defined in the global variable `StacksalePayApiEndpoints`. You can override these endpoints **before** the component initialises by setting:
 
 ```javascript
-window.SecurePayApiEndpoints = {
+window.StacksalePayApiEndpoints = {
   baseApiHost: 'your-api-host.com',
   promotionDataUrl: '/custom/path/to/promotion',
   hotelDataUrl: '/custom/path/to/initialisation',
@@ -40,7 +40,7 @@ If the `default=true` query parameter is present, the component will ignore the 
 ## Notes
 
 - The form is built dynamically using Angular Reactive Forms and supports complex structures like categories, questions, pricing rules, and taxes.
-- A live preview of the promotion (using `@unsonet/securepay-preview`) is displayed alongside the form.
+- A live preview of the promotion (using `@unsonet/stacksale-pay-preview`) is displayed alongside the form.
 - The component communicates with the parent frame via `postMessage` events (`promotion-init`, `promotion-ready`, `promotion-save`, `promotion-cancel`), making it suitable for embedding in an iframe.
 
 For detailed API and integration, refer to the source code or internal documentation.

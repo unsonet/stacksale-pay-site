@@ -1,6 +1,6 @@
 {
-    "name": "securepay-site",
-    "version": "1.16.1",
+    "name": "stacksale-pay-site",
+    "version": "1.17.0",
     "scripts": {
         "start": "node main.js"
     }

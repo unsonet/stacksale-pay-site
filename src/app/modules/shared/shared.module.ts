@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BootstrapSelectDirective } from '@unsonet/ngx-bootstrap-select-directive';
 import { AirDatepickerDirective } from '@unsonet/ngx-air-datepicker-directive';
 import { SummernoteDirective } from '@unsonet/ngx-summernote-directive';
-import { SecurepayPreviewDirective } from '@unsonet/ngx-securepay-preview-directive';
+import { StacksalePayPreviewDirective } from '@unsonet/ngx-stacksale-pay-preview-directive';
 import { PreviewComponent } from './components/preview/preview.component';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { SortablejsModule } from '@unsonet/ngx-sortablejs';
@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
     BootstrapSelectDirective, 
     AirDatepickerDirective, 
     SummernoteDirective, 
-    SecurepayPreviewDirective,
+    StacksalePayPreviewDirective,
     PreviewComponent, 
     SafeHtmlPipe,
   ],
@@ -30,7 +30,7 @@ import { RouterModule } from '@angular/router';
     BootstrapSelectDirective, 
     AirDatepickerDirective, 
     SummernoteDirective,
-    SecurepayPreviewDirective,
+    StacksalePayPreviewDirective,
     PreviewComponent,
     SafeHtmlPipe,
     SortablejsModule,

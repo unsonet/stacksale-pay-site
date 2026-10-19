@@ -3,7 +3,7 @@
   "name": "Test Promotion - Max Attendees",
   "hotel": {
     "id": 2480,
-    "name": "SecurePay Demo Hotel",
+    "name": "Stacksale Pay Demo Hotel",
     "currency": "AED",
     "currencyFormat": "#,####,##0.00"
   },
@@ -37,11 +37,11 @@
   },
   "maxAttendeesPerDate": 10,
   "promotionText": "<p>Testing of \"max attendees\" values which is set to 10 per promotion date.</p>",
-  "contactName": "Phil Duhs",
-  "contactEmail": "phil.duhs@securepay.ae",
+  "contactName": "John Doe",
+  "contactEmail": "john.doe@site.com",
   "contactPhone": "+971555555555",
   "notifyEmails": [
-    "hotelManager@securepay.ae"
+    "hotelManager@site.com"
   ],
   "categories": [
     {
@@ -136,10 +136,10 @@
   "enabled": true,
   "createdBy": {
     "id": 2551,
-    "username": "securePayDemoHotel_pd",
+    "username": "stacksalePayDemoHotel_pd",
     "firstName": "Phil",
     "lastName": "Duhs"
   },
   "promotionType": "promotion",
-  "promotionLink": "https://securepay-demo-hotel.dev.securepay.ae:8443/promotion/view/26a416cd-905b-4276-a814-b6c0fd41cd21"
+  "promotionLink": "https://site.com/promotion/view/26a416cd-905b-4276-a814-b6c0fd41cd21"
 }

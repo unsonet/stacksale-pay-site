@@ -18,5 +18,5 @@ if (environment.production) {
 platformBrowserDynamic([
   { provide: PROMO_MODE, useValue: true }
 ])
-  .bootstrapModule(AppModule, { applicationProviders: [provideZoneChangeDetection()], applicationProviders: [object Object],})
+  .bootstrapModule(AppModule, { applicationProviders: [provideZoneChangeDetection()]})
   .catch(err => console.error(err));

@@ -1,16 +1,16 @@
-import { ComparisonType, ContentType, DisplayMethod, PricingMethod, SelectionType, TaxType, QuestionTypes } from '@unsonet/securepay-types/promotions';
+import { ComparisonType, ContentType, DisplayMethod, PricingMethod, SelectionType, TaxType, QuestionTypes } from '@unsonet/stacksale-pay-types/promotions';
 import { PromotionService } from './../../../services/promotion.service';
 import { AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { of } from 'rxjs';
-import { Promotion, RecurrencePeriod } from '@unsonet/securepay-types/promotions';
+import { Promotion, RecurrencePeriod } from '@unsonet/stacksale-pay-types/promotions';
 // import bootstrap from 'bootstrap';
 import { filterArray } from '../../../../shared/utils';
 import { getDates, getEnumValues, getUrlParameter, isPromise, moveArrayItem, getRandomString, sleep, sortArrayOfObjects, stripHTML, uniqueArr, findMod, toLowerCase } from '@unsonet/js-utils';
 import { addFormGroupControl, addToFormArray, checkboxFormArrayHandler, checkboxFormControlHandler, cloneAbstractControl, compareByID, filterControls, getFormControlName, getRawValueDeep, manageFormControl, manageFormControls, removeFormArrayControl, removeFormGroupControl, removeFromFormArray, renameFormControl, replaceFormControl, switchFormArray } from '@unsonet/ngx-utils';
 import moment from 'moment';
-import { PreviewComponent } from '@unsonet/securepay-preview';
-import { DayOfWeek } from '@unsonet/securepay-types';
+import { PreviewComponent } from '@unsonet/stacksale-pay-preview';
+import { DayOfWeek } from '@unsonet/stacksale-pay-types';
 import { ArrayValidators, CommonValidators, DateValidators, ObjectValidators, PhoneValidators, RegExpValidators } from '@unsonet/ngx-validators';
 import { MediaService } from '@unsonet/ngx-media-service';
 //import * as $ from 'jquery';
@@ -231,14 +231,14 @@ export class NewPromotionPageComponent implements OnInit, AfterContentInit, Afte
 
     if (hasDefaultQueryParam) {
       apiEndpoints = {
-        baseApiHost: `test.securepay.ae`,
+        baseApiHost: ``,
         promotionDataUrl: `/ajax/promotions/getPromotion?promotionUuid={{promotionId}}`,
         hotelDataUrl: `/admin/ajax/promotions/getPromotionAddEditFormInitialisation`,
         submitPromotionUrl: `/admin/promotions/submitPromotion`,
       };
-      (window as any)['SecurePayApiEndpoints'] = apiEndpoints;
+      (window as any)['StacksalePayApiEndpoints'] = apiEndpoints;
     } else {
-      apiEndpoints = (window as any)['SecurePayApiEndpoints'];
+      apiEndpoints = (window as any)['StacksalePayApiEndpoints'];
     }
     this.promotionService.setApiEndpoints(apiEndpoints);
   }

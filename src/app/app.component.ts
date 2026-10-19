@@ -34,7 +34,7 @@ export class AppComponent {
             })
         ).subscribe((data: any) => {
             if (data) {
-                this.titleService.setTitle('SecurePay : ' + data);
+                this.titleService.setTitle('Stacksale Pay : ' + data);
             }
         });
     }

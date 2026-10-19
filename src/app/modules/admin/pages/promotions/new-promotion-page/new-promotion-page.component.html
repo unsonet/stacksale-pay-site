@@ -401,13 +401,13 @@
               </div>
             </div>
           </div>
-          @if (promotionService?.initialisationData?.promotionAddEditFormInitialisationData?.isSecurePayUser) {
+          @if (promotionService?.initialisationData?.promotionAddEditFormInitialisationData?.isStacksalePayUser) {
             <div class="col form-group">
               <label>Custom CSS:</label>
               <textarea class="form-control" height="150" rows="5" name="customCSS" (input)="manageFormControl(stripHTML(promotionDataGroup?.controls?.customCSS.value), promotionDataGroup?.controls?.customCSS)" [formControl]="promotionDataGroup?.controls?.customCSS" [value]="promotionDataGroup?.controls?.customCSS.value" placeholder="Custom CSS…" summernote></textarea>
             </div>
           }
-          @if (promotionService?.initialisationData?.promotionAddEditFormInitialisationData?.isSecurePayUser) {
+          @if (promotionService?.initialisationData?.promotionAddEditFormInitialisationData?.isStacksalePayUser) {
             <div class="col form-group">
               <label>Custom JS:</label>
               <textarea class="form-control" height="150" rows="5" name="customJS" (input)="manageFormControl(stripHTML(promotionDataGroup?.controls?.customJS.value), promotionDataGroup?.controls?.customJS)" [formControl]="promotionDataGroup?.controls?.customJS" [value]="promotionDataGroup?.controls?.customJS.value" placeholder="Custom JS…" summernote></textarea>
@@ -1235,13 +1235,13 @@ Questions.</div>
           <!-- Content -->
           <!-- <app-preview [previewTemplate]="previewTemplate" [promotionData]="bufferPromotionData"></app-preview> -->
           <!-- <div
-          securepay-preview
+          stacksale-pay-preview
           [config]="bufferPromotionData"
           (templateUpdated)="onTemplateUpdated($event)"
           (templateSubmit)="onTemplateSubmit($event)">
         </div> -->
         @if (true) {
-          <table id="promotion" securepay-preview [config]="bufferPromotionData" [previewTemplate]="previewTemplate"
+          <table id="promotion" stacksale-pay-preview [config]="bufferPromotionData" [previewTemplate]="previewTemplate"
             [morphing]="true" [saveInputStates]="true"
             (templateUpdated)="onTemplateUpdated($event)" (templateSubmit)="onTemplateSubmit($event)">
             <tbody>
@@ -1275,12 +1275,12 @@ Questions.</div>
                 </td>
               </tr>
               <tr>
-                <td class="content-cell" style="text-align:center; padding:0 15px;"> <a href="https://securepay-demo.test.securepay.ae/prepay/[-uuid-]" class="Button payPreAuthButton btn btn-success btn-sm disabled"> Pay <span class="parameter_currency">[-hotel.currency-]</span>&nbsp;<span class="parameter_amount">[-amount-]</span> </a> </td>
+                <td class="content-cell" style="text-align:center; padding:0 15px;"> <a href="/prepay/[-uuid-]" class="Button payPreAuthButton btn btn-success btn-sm disabled"> Pay <span class="parameter_currency">[-hotel.currency-]</span>&nbsp;<span class="parameter_amount">[-amount-]</span> </a> </td>
               </tr>
               <tr>
                 <td class="content-cell" style="padding:0 15px;">
-                  <p> For any enquiries, or if you have any concerns about the authenticity of this email, please contact the <span class="contact">[-contactName-]</span> at SecurePay Demo at <a class="email" href="mailto:[-contactEmail-]">[-contactEmail-]</a> or by telephone on <a class="tel" href="tel:[-contactPhone-]">[-contactPhone-]</a>, or see answers to <a href="https://securepay-demo.test.securepay.ae/prepay/[-uuid-]#frequentlyAskedQuestions">Frequently Asked Questions.</a> </p>
-                  <p>Kind Regards,<br>SecurePay Demo</p>
+                  <p> For any enquiries, or if you have any concerns about the authenticity of this email, please contact the <span class="contact">[-contactName-]</span> at Stacksale Pay Demo at <a class="email" href="mailto:[-contactEmail-]">[-contactEmail-]</a> or by telephone on <a class="tel" href="tel:[-contactPhone-]">[-contactPhone-]</a>, or see answers to <a href="/prepay/[-uuid-]#frequentlyAskedQuestions">Frequently Asked Questions.</a> </p>
+                  <p>Kind Regards,<br>Stacksale Pay Demo</p>
                 </td>
               </tr>
               <tr>

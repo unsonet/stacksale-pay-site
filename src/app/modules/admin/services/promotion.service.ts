@@ -44,8 +44,8 @@ export class PromotionService {
     }
     //let formData  = new FormData();
     let headers = new Headers();
-    //let username = environment.securepayCredentials.username;
-    //let password = environment.securepayCredentials.password;
+    //let username = environment.stacksalePayCredentials.username;
+    //let password = environment.stacksalePayCredentials.password;
     headers.append('Accept', 'application/json, text/plain, */*');
     headers.append('Content-Type', 'application/json');
     headers.append('X-Requested-With', 'XMLHttpRequest');
@@ -259,7 +259,7 @@ export class PromotionService {
     //   requestHotelDataUrl:string,
     //   submitPromotionUrl:string
     // } = {
-    //   baseApiHost: getUrlParameter(location.href, "default", true) || getUrlParameter(location.href, "proxy", true) ? 'test.securepay.ae' : location.host,
+    //   baseApiHost: getUrlParameter(location.href, "default", true) || getUrlParameter(location.href, "proxy", true) ? '' : location.host,
     //   promotionDataUrl:`/ajax/promotions/getPromotion?promotionUuid={{promotionId}}`,
     //   requestHotelDataUrl:`/admin/ajax/promotions/getPromotionAddEditFormInitialisation`,
     //   submitPromotionUrl:`/admin/promotions/submitPromotion`,
